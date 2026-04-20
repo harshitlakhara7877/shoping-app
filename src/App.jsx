@@ -22,7 +22,7 @@ function App() {
 
   return (
     <CartProvider>
-      <Router>
+      <Router basename="/shoping-app">
         <div className="min-h-screen bg-[#f1f3f6] flex flex-col">
           <Navbar
             searchTerm={searchTerm}
