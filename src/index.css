@@ -1,0 +1,66 @@
+@import "tailwindcss";
+
+@theme {
+  --color-amazon-dark: #131921;
+  --color-amazon-light: #232f3e;
+  --color-amazon-yellow: #ffd814;
+  --color-amazon-orange: #f3a847;
+  --color-flipkart-blue: #2874f0;
+  --color-flipkart-yellow: #fb641b;
+}
+
+:root {
+  --sans: 'Inter', system-ui, -apple-system, sans-serif;
+  --bg-main: #f1f3f6;
+  
+  font-family: var(--sans);
+  background-color: var(--bg-main);
+  color: #111827;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background-color: #f1f3f6;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom transitions and scroll behavior */
+* {
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 200ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #aaa;
+}
+
+/* Image scaling for better cards */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
